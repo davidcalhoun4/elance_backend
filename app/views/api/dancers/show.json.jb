@@ -1,0 +1,1 @@
+render partial: "dancer.json.jb", locals: {dancer: @dancer}

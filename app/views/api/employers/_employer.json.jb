@@ -1,0 +1,8 @@
+{
+  id: employer.id,
+  email: employer.email,
+  company_name: employer.company_name,
+  image_url: employer.image_url,
+  description: employer.description,
+  employer_type: employer.employer_type
+}

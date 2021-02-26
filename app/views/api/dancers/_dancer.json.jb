@@ -1,0 +1,11 @@
+{
+  id: dancer.id,
+  email: dancer.email,
+  first_name: dancer.first_name,
+  last_name: dancer.last_name,
+  image_url: dancer.image_url,
+  resume: dancer.resume,
+  about: dancer.about,
+  video: dancer.video,
+  genre: dancer.genre_id
+}
