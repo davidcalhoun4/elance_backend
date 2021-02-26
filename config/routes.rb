@@ -19,6 +19,8 @@ Rails.application.routes.draw do
     get "/dancers" => "dancers#index"
     post "/dancers" => "dancers#create"
     get "/dancers/:id" => "dancers#show"
+    patch "/dancers/:id" => "dancers#update"
+    delete "/dancers/:id" => "dancers#destroy"
   end
 
 end

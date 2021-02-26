@@ -35,7 +35,7 @@ class Api::EmployersController < ApplicationController
 
     @employer.email = params[:email] || @employer.email 
     @employer.password = params[:password] || @employer.password
-    # @employer.password_confirmation = params[:password_confirmation] || @employer.password_confirmation --- INCLUDE PASSWORD_CONFIRMATION ?
+    @employer.password_confirmation = params[:password_confirmation] || @employer.password_confirmation 
     @employer.company_name = params[:company_name] || @employer.company_name
     @employer.employer_type = params[:employer_type] || @employer.employer_type
     @employer.description = params[:description] || @employer.description
