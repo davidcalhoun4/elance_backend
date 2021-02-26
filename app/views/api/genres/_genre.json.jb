@@ -1,0 +1,4 @@
+{
+  id: genre.id,
+  style: genre.style
+}

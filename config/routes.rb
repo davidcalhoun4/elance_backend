@@ -15,12 +15,23 @@ Rails.application.routes.draw do
     patch "/employers/:id" => "employers#update"
     delete "/employers/:id" => "employers#destroy"
 
-    #dancer 
+    # dancer 
     get "/dancers" => "dancers#index"
     post "/dancers" => "dancers#create"
     get "/dancers/:id" => "dancers#show"
     patch "/dancers/:id" => "dancers#update"
     delete "/dancers/:id" => "dancers#destroy"
+
+    # post
+    get "/posts" => "posts#index"
+    post "/posts" => "posts#create"
+    get "/posts/:id" => "posts#show"
+    patch "/posts/:id" => "posts#update"
+    delete "/posts/:id" => "posts#destroy"
+
+    # genre 
+    get "/genres" => "genres#index"
+      
   end
 
 end
