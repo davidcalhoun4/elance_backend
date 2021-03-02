@@ -31,6 +31,10 @@ Rails.application.routes.draw do
 
     # genre 
     get "/genres" => "genres#index"
+
+    # sessions
+    post "/dancer/sessions" => "sessions#dancer_create"
+    post "/employer/sessions" => "sessions#employer_create"
       
   end
 

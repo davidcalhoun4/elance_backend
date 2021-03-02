@@ -5,6 +5,5 @@
   description: post.description,
   image_url: post.image_url,
   genre_id: post.genre_id,
-  created: post.created_at,
-  updated_at: post.updated_at
+  created: post.created_at
 }

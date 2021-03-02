@@ -1,5 +1,6 @@
 class Api::EmployersController < ApplicationController
 
+  before_action :authenticate_employer, except: [:index, :show, :create]
 
   def index
     @employers = Employer.all 
@@ -18,7 +19,7 @@ class Api::EmployersController < ApplicationController
       image_url: params[:image_url]
     )
     if @employer.save 
-      render json: { message: "Successfully created." }, status: :created
+      render "show.json.jb"
     else 
       render json: { errors: @employer.errors.full_messages }, status: :bad_request
     end

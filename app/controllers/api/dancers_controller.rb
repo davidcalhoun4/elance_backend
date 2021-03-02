@@ -1,5 +1,7 @@
 class Api::DancersController < ApplicationController
 
+  before_action :authenticate_dancer, except: [:index, :show, :create]
+
   def index
     @dancers = Dancer.all
     render "index.json.jb"
