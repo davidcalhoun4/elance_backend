@@ -5,6 +5,7 @@ class Api::DancersController < ApplicationController
     render "index.json.jb"
   end
 
+
   def create
     @dancer = Dancer.new(
       email: params[:email],
@@ -25,10 +26,13 @@ class Api::DancersController < ApplicationController
     end
   end
 
+
   def show
     @dancer = Dancer.find_by(id: params[:id])
     render "show.json.jb"
   end
+
+
 
   def update
     dancer_id = params[:id]
@@ -53,6 +57,8 @@ class Api::DancersController < ApplicationController
 
   end
 
+
+  
   def destroy
     dancer = Dancer.find_by(id: params[:id])
     dancer.destroy

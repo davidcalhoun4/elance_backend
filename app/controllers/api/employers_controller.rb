@@ -24,10 +24,14 @@ class Api::EmployersController < ApplicationController
     end
   end
 
+
+
   def show
     @employer = Employer.find_by(id: params[:id])
     render "show.json.jb"
   end
+
+
 
   def update
     employer_id = params[:id]
@@ -49,6 +53,8 @@ class Api::EmployersController < ApplicationController
 
   end
 
+
+  
   def destroy
     employer = Employer.find_by(id: params[:id])
     employer.destroy
