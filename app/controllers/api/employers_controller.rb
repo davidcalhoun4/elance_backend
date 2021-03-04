@@ -64,7 +64,7 @@ class Api::EmployersController < ApplicationController
 
     if @employer == current_employer
       @employer.destroy
-      render json: { message: "deleted!" }
+      render json: { message: "employer deleted!" }
       # all_posts = Post.where("employer_id = ?", @employer.id)
       # all_posts.destroy 
     else

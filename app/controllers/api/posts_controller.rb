@@ -28,30 +28,30 @@ class Api::PostsController < ApplicationController
   end
 
   def update
-    @post = Post.find_by(id: params[:id])
-
-    if current_employer == @post.employer_id
+    
+    if
+      @post = current_employer.posts.find_by(id: params[:id])
       @post.title = params[:title] || @post.title
       @post.description = params[:description] || @post.description
       @post.image_url = params[:image_url] || @post.image_url
       @post.genre_id = params[:genre_id] || @post.genre_id
-
-      if @post.save
-        render "show.json.jb"
-      else 
-        render json: { errors: @post.errors.full_messages }, status: :unprocessable_entity
-      end
+        if @post.save
+          render "show.json.jb"
+        else 
+          render json: { errors: @post.errors.full_messages }, status: :unprocessable_entity
+        end
     else
-      render json: { errors: "you are not authorized to update this user" }, status: :unauthorized
+      render json: { message: "you are not authorized to update this user"}
     end
+
 
   end
 
   def destroy
-    post = Post.find_by(id: params[:id])
+    post = current_employer.posts.find_by(id: params[:id])
     post.destroy
-
     render json: { message: "deleted!" }
+
   end
 
 
