@@ -72,7 +72,7 @@ class Api::DancersController < ApplicationController
     
     if @dancer == current_dancer
       @dancer.destroy
-      render json: { message: " dancer deleted!" } 
+      render json: { message: "dancer deleted!" } 
     else
       render json: { errors: "you are not authorized to update this user" }, status: :unauthorized
     end

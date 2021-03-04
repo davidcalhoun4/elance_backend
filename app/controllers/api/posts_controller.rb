@@ -28,7 +28,7 @@ class Api::PostsController < ApplicationController
   end
 
   def update
-    
+
     if
       @post = current_employer.posts.find_by(id: params[:id])
       @post.title = params[:title] || @post.title
@@ -41,7 +41,7 @@ class Api::PostsController < ApplicationController
           render json: { errors: @post.errors.full_messages }, status: :unprocessable_entity
         end
     else
-      render json: { message: "you are not authorized to update this user"}
+      render json: { message: "you are not authorized to update this user"}, status: :unauthorized
     end
 
 
@@ -49,9 +49,11 @@ class Api::PostsController < ApplicationController
 
   def destroy
     post = current_employer.posts.find_by(id: params[:id])
-    post.destroy
-    render json: { message: "deleted!" }
-
+      if post.destroy
+        render json: { message: "post deleted!" }
+      else
+        render json: { message: "you are not authorized to destroy this post." }, status: :unauthorized
+      end
   end
 
 
