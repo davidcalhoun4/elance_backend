@@ -13,10 +13,10 @@ class Api::EmployersController < ApplicationController
       email: params[:email],
       password: params[:password],
       password_confirmation: params[:password_confirmation],
-      company_name: params[:company_name],
-      employer_type: params[:employer_type],
-      description: params[:description],
-      image_url: params[:image_url]
+      company_name: params[:company_name]
+      # employer_type: params[:employer_type],
+      # description: params[:description],
+      # image_url: params[:image_url]
     )
     if @employer.save 
       render "show.json.jb"

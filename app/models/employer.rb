@@ -3,5 +3,5 @@ class Employer < ApplicationRecord
   has_secure_password
   validates :email, presence: true, uniqueness: true
   validates :company_name, presence: true
-  validates :description, presence: true
+  # validates :description, presence: true
 end

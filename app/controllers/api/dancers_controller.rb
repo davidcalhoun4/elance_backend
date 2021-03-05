@@ -15,10 +15,10 @@ class Api::DancersController < ApplicationController
       password_confirmation: params[:password_confirmation],
       first_name: params[:first_name],
       last_name: params[:last_name],
-      image_url: params[:image_url],
-      resume: params[:resume],
-      about: params[:about],
-      video: params[:video],
+      # image_url: params[:image_url],
+      # resume: params[:resume],
+      # about: params[:about],
+      # video: params[:video],
       genre_id: params[:genre_id]
     )
     if @dancer.save
