@@ -1,3 +1,9 @@
 @posts.map do |post|
-  render partial: "post.json.jb", locals: { post: post }
+
+  json = render partial: "post.json.jb", locals: { post: post }
+
+  # json[:employer] = render partial: "api/employers/employer.json.jb", locals: { employer: post.employers }
+
+  json 
+  
 end
