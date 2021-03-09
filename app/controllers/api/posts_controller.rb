@@ -1,6 +1,6 @@
 class Api::PostsController < ApplicationController
 
-  before_action :authenticate_employer, except: [:index, :show]
+  before_action :authenticate_employer, except: [:index, :show, :create]
 
   def index
     @posts = Post.all

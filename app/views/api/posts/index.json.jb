@@ -2,8 +2,14 @@
 
   json = render partial: "post.json.jb", locals: { post: post }
 
-  # json[:employer] = render partial: "api/employers/employer.json.jb", locals: { employer: post.employers }
+
+  json[:employer] = render partial: "/api/employers/employer.json.jb", locals: { employer: post.employer }
+
+  json[:genre] = render partial: "api/genres/genre.json.jb", locals: { genre: post.genre }  
 
   json 
-  
+
 end
+
+
+
