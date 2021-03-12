@@ -1,3 +1,8 @@
 @dancers.map do |dancer|
-  render partial: "dancer.json.jb", locals: { dancer: dancer }
+  json = render partial: "dancer.json.jb", locals: { dancer: dancer }
+
+  json[:genre] = render partial: "api/genres/genre.json.jb", locals: { genre: dancer.genre }
+
+  json
+
 end

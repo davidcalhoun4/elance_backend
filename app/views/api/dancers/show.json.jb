@@ -1,1 +1,3 @@
-render partial: "dancer.json.jb", locals: {dancer: @dancer}
+dancer = render partial: "dancer.json.jb", locals: {dancer: @dancer}
+dancer[:genre] = render partial: "api/genres/genre.json.jb", locals: { genre: @dancer.genre }
+dancer

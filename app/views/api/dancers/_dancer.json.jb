@@ -7,6 +7,6 @@
   resume: dancer.resume,
   about: dancer.about,
   video: dancer.video,
-  genre: dancer.genre_id
+  genre: dancer.genre
 }
 
