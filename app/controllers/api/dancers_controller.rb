@@ -34,21 +34,21 @@ class Api::DancersController < ApplicationController
     render "show.json.jb"
   end
 
-
+  # resume_file is what the front end param will be looking for
   def update
+    response = Cloudinary::Uploader.upload(params[:resume_file])
+    cloudinary_url = response["secrue_url"]
+
     @dancer = Dancer.find_by(id: params[:id])
 
     if @dancer == current_dancer
 
       @dancer.email = params[:email] || @dancer.email 
-      # @dancer.password = params[:password] || @dancer.password
-      # @dancer.password_confirmation = params[:password_confirmation] || @dancer.password_confirmation
       @dancer.first_name = params[:first_name] || @dancer.first_name
       @dancer.last_name = params[:last_name] || @dancer.last_name
       @dancer.image_url = params[:image_url] || @dancer.image_url
-      @dancer.resume = params[:resume] || @dancer.resume
+      @dancer.resume_file = cloudinary_url || @dancer.resume_file
       @dancer.about = params[:about] || @dancer.about
-      
       @dancer.video = params[:video] || @dancer.video
       @dancer.genre_id = params[:genre_id] || @dancer.genre_id
       if params[:password]
