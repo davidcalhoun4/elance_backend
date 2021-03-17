@@ -5,8 +5,10 @@
   last_name: dancer.last_name,
   image_url: dancer.image_url,
   resume: dancer.resume,
-  about: dancer.about,
   video: dancer.video,
+  about: dancer.about,
   genre: dancer.genre
 }
+
+
 

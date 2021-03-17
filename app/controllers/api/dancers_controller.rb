@@ -35,7 +35,6 @@ class Api::DancersController < ApplicationController
   end
 
 
-
   def update
     @dancer = Dancer.find_by(id: params[:id])
 
@@ -49,6 +48,7 @@ class Api::DancersController < ApplicationController
       @dancer.image_url = params[:image_url] || @dancer.image_url
       @dancer.resume = params[:resume] || @dancer.resume
       @dancer.about = params[:about] || @dancer.about
+      
       @dancer.video = params[:video] || @dancer.video
       @dancer.genre_id = params[:genre_id] || @dancer.genre_id
       if params[:password]

@@ -1,5 +1,6 @@
 dancer = render partial: "dancer.json.jb", locals: {dancer: @dancer}
-if @dancer.genre
-  dancer[:genre] = render partial: "api/genres/genre.json.jb", locals: { genre: @dancer.genre }
-end
+
+dancer[:genre] = render partial: "api/genres/genre.json.jb", locals: { genre: @dancer.genre } if @dancer.genre
+
+dancer[:youtube_embed] = @dancer.youtube_embed(@dancer.video) if @dancer.video 
 dancer
