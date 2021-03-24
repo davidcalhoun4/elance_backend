@@ -139,15 +139,19 @@
     {
       title: "Open Company Position 2021-2022 Season",
       employer_id: 2, 
-      description: "Looking to hire 1 dancer for open company position 2021-2022 season. Post:Ballet is seeking experienced dancer interested in a diverse, collaborative environment. The artist should display strong classical training, have experience in contemporary dance and a passion for the creative process.Strong sense of musicality and timing, playful theater improvisation skills, clean technique, and ability to retain a large amount of technical choreography a must. Season includes local and touring performances, community outreach classes, and work with guest choreographers. Include in your email:
-      1 page CV and headshot (clear photo of your face, not full body), link to dance reel, and resume. Deadline for applications is the 15th of April 2021. Dancers will be notified with more information by May 15th, 2021",
+      description: "Looking to hire 1 dancer for open company position 2021-2022 season. Post:Ballet is seeking experienced dancer interested in a diverse, collaborative environment. The artist should display strong classical training, have experience in contemporary dance and a passion for the creative process. Season includes local and touring performances, community outreach classes, and work with guest choreographers. 
+      
+      Include in your email:
+      Resume, headshot, and link to dance reel. Deadline for applications is the 15th of April 2021. Dancers will be notified with more information by May 15th, 2021",
       image_url: "https://images.squarespace-cdn.com/content/v1/5b34758fa2772c576ae3af0a/1599951203176-CIXL8HPWTWWT89XOA3R9/ke17ZwdGBToddI8pDm48kD8rqGGps2pvaaR4DdBgLhNZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpylqMIOeBnlkFIjYo8JeP2Il4wgOQfMtgLt4oIkZ9moAYDrxyjFoHCRsCFZk_szyNA/920x920.jpg",
       genre_id: 2
     },
     {
       title: "Musuem Opening Night: Dancers Needed",
       employer_id: 3, 
-      description: "Dancers needed for piece being performed at opening night of museum. We’re looking for a dancers with a strong sense of musicality and timing, playful theater improvisation skills, clean technique, and ability to retain a large amount of technical choreography. Include in your email:
+      description: "Dancers needed for piece being performed at opening night of museum. We’re looking for a dancers with a strong sense of musicality and timing, playful theater improvisation skills, clean technique, and ability to retain a large amount of technical choreography. 
+      
+      Include in your email:
       1 page CV and headshot (clear photo of your face, not full body), link to dance reel, and resume. Deadline for applications is the 26th of March 2021",
       image_url: "https://media.glassdoor.com/sqll/1597466/jc-jeans-squarelogo-1531744623807.png",
       genre_id: 5
@@ -155,15 +159,17 @@
     {
       title: "Dancer for film project",
       employer_id: 4, 
-      description: "1 Dancer needed for film project. Looking for a dancer with a strong sense of musicality and timing, improvisation skills, clean technique, and ability to retain a large amount of technical choreography. Include in your email:
+      description: "1 Dancer needed for film project. Looking for a dancer with a strong sense of musicality and timing, improvisation skills, clean technique, and ability to retain a large amount of technical choreography.
+      
+      Include in your email:
       1 page CV and headshot (clear photo of your face, not full body), link to dance reel, and resume. Deadline for applications is the 6th of April 2021",
       image_url: "https://assets.danceinforma.com/public/assets/mce/Chelsea_New/San_Francisco_Dance_Film_Festival_-_Home_Alone.jpg",
       genre_id: 3
     },
     {
-      title: "Seeking Dancers for two productions",
+      title: "Seeking Dancers for Two Productions",
       employer_id: 5,
-      description: "For the upcoming creation and tour of our new production DONUTS Co-produced by The Place , as well as digital creations of our work JUKEBOXin collaboration with Mahalia. We’re looking for dancers with a strong sense of musicality and timing, playful improvisation skills and ability to retain a large amount of technical choreography. We’re looking for a dancer with a strong sense of musicality and timing, playful theater improvisation skills, clean technique, and ability to retain a large amount of technical choreography. Include in your email:
+      description: "For the upcoming creation and tour of our new production DONUTS Co-produced by The Place , as well as digital creations of our work JUKEBOXin collaboration with Mahalia. We’re looking for a dancer with a strong sense of musicality and timing, playful theater improvisation skills, clean technique, and ability to retain a large amount of technical choreography. Include in your email:
       1 page CV and headshot (clear photo of your face, not full body), link to dance reel, and resume. Deadline for applications is the 26th of March 2021",
       image_url: "https://xtrax.org.uk/app/uploads/2020/08/Jamaal-Burkmar_-Photo-by-Danilo-Moroni-min-1.jpeg",
       genre_id: 5
