@@ -77,7 +77,7 @@
       image_url: "https://www.odc.dance/sites/default/files/image1_crop.jpg",
       resume: "https://res.cloudinary.com/dvdclhn/image/upload/v1616604772/qstwap8ptakb8ke68ww0.pdf",
       about: "Hailing from Maysville, Kentucky, Calvin Thomas received foundational training at the Otto M. Budig Academy of Cincinnati Ballet. He has supplemented his studies at Boston Ballet School, The School of American Ballet, Ballet Austin Academy, and The School of Oregon Ballet Theatre. His career start began with the Cincinnati Ballet and Ballet Austin. Since moving to the Bay Area in 2011 he has performed with Company C Contemporary Ballet, New York Theatre Ballet, Oakland Ballet Company, Dance Theatre of San Francisco, Kiandanda Dance Theater, Mark Foehringer Dance Project, and Garrett Moulton Productions. His repertoire includes works by Thang Dao, Gregory Dawson, Yuri Zhukov, and Maurice Causey among others. When not dancing he still enjoys time in the studio sharing knowledge and teaching the next generation of dancers. He has recently developed a passion for coaching from the inspiration of his mentor, Shannon Bresnahan.",
-      video: "https://www.youtube.com/watch?v=zN5ZngBdiDI"
+      video: "https://www.youtube.com/watch?v=zN5ZngBdiDI",
       genre_id: "1"
     }
   ])
@@ -122,7 +122,7 @@
       email: "jamaal@gmail.com",
       company_name: "Jamaal Burkmar",
       image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlykCcFCd9dLPNErlJZinENSIa2dLhJoAcbQ&usqp=CAU",
-      description: "Jamaal is a choreographer who trained at the Northern School of Contemporary Dance (NSCD) where he gained a BA (Hons) in Contemporary Dance & Foundation Diploma. He has worked with ACE Dance and Music – working with professional artists including Luyanda Sidiya, Jose Agudo, and Gail Parmel as well as on the company’s outreach programmes working in schools and with their youth company. Jamaal has taught workshops at NSCD, Pro Dance, and The Place. He currently teaches and has taught in different capacities at Edge Hill University, NSCD and Salford University."
+      description: "Jamaal is a choreographer who trained at the Northern School of Contemporary Dance (NSCD) where he gained a BA (Hons) in Contemporary Dance & Foundation Diploma. He has worked with ACE Dance and Music – working with professional artists including Luyanda Sidiya, Jose Agudo, and Gail Parmel as well as on the company’s outreach programmes working in schools and with their youth company. Jamaal has taught workshops at NSCD, Pro Dance, and The Place. He currently teaches and has taught in different capacities at Edge Hill University, NSCD and Salford University.",
       employer_type: "Freelance Choreographer"
     }
   ])
