@@ -112,9 +112,9 @@
     {
       password: "password",
       email: "jeremy@gmail.com",
-      company_name: "Noons Dance",
+      company_name: "Jeremy Dance",
       image_url: "https://mir-s3-cdn-cf.behance.net/project_modules/disp/0aa01128581569.55c7f272d2f73.jpg",
-      description: "Jeremy Noons is a San Francisco based TONY® Award nominated choreographer and director. Since paving his professional career, his work has been characterized as a blend of powerful versatility and theatrical range.",
+      description: "Jeremy Dance is a San Francisco based TONY® Award nominated choreographer and director. Since paving his professional career, his work has been characterized as a blend of powerful versatility and theatrical range.",
       employer_type: "Freelance Choreographer"
     },
     {
