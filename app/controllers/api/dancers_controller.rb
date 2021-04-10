@@ -9,20 +9,10 @@ class Api::DancersController < ApplicationController
 
 
   def create
-    # response = Cloudinary::Uploader.upload(params[:resume_file])
-    # cloudinary_url = response["secure_url"]
-
     @dancer = Dancer.new(
       email: params[:email],
       password: params[:password],
       password_confirmation: params[:password_confirmation],
-      # first_name: params[:first_name],
-      # last_name: params[:last_name],
-      # image_url: params[:image_url],
-      # resume: cloudinary_url
-      # about: params[:about],
-      # video: params[:video],
-      # genre_id: params[:genre_id]
     )
     if @dancer.save
       render "show.json.jb"

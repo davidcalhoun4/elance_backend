@@ -14,9 +14,6 @@ class Api::EmployersController < ApplicationController
       password: params[:password],
       password_confirmation: params[:password_confirmation],
       company_name: params[:company_name]
-      # employer_type: params[:employer_type],
-      # description: params[:description],
-      # image_url: params[:image_url]
     )
     if @employer.save 
       render "show.json.jb"
@@ -65,8 +62,6 @@ class Api::EmployersController < ApplicationController
     if @employer == current_employer
       @employer.destroy
       render json: { message: "employer deleted!" }
-      # all_posts = Post.where("employer_id = ?", @employer.id)
-      # all_posts.destroy 
     else
       render json: { errors: "you are not authorized to update this user" }, status: :unauthorized
     end
